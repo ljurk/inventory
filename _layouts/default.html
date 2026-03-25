@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <script>
+    const REPO = "{{ site.github_repo | replace: 'https://github.com/', '' }}";
+  </script>
+</head>
+<body>
+  <main class="container">
+    <h1>{{ page.title }}</h1>
+    {{ content }}
+  </main>
+
+  <script>
+    async function loadCheckouts() {
+      const container = document.getElementById('checkout-history');
+      if (!container || !REPO) return;
+
+      try {
+        const resp = await fetch(`https://api.github.com/repos/${REPO}/issues?labels=checkout&state=all`);
+        const issues = await resp.json();
+
+        if (!issues.length) {
+          container.innerHTML = '<p>No checkouts yet.</p>';
+          return;
+        }
+
+        container.innerHTML = issues.map(issue => {
+          const date = new Date(issue.created_at).toLocaleDateString();
+          const event = issue.title.replace(/^Checkout:\s*/i, '') || 'Unknown event';
+          return `<tr>
+            <td>${date}</td>
+            <td>${event}</td>
+            <td><a href="${issue.html_url}">#${issue.number}</a></td>
+          </tr>`;
+        }).join('');
+      } catch (e) {
+        container.innerHTML = '<p>Failed to load checkouts.</p>';
+      }
+    }
+    loadCheckouts();
+  </script>
+</body>
+</html>

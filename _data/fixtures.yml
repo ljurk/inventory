@@ -1,0 +1,9 @@
+---
+- name: Varytec LED Typhoon True PAR 12x10
+  quantity: 4
+  link: https://www.thomann.de/de/varytec_led_typhoon_true_par_12x10_out.htm?gad_source=1
+  manual: https://fast-images.static-thomann.de/pics/atg/atgdata/document/manual/420255_c_420255_v4_en_online.pdf
+
+- name: Eurolite LED THM-46
+  quantity: 2
+  link: https://www.thomann.de/de/eurolite_led_tmh_46_moving_head_wash.htm

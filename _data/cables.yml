@@ -1,0 +1,21 @@
+---
+- name: XLR Stereo
+  length: 10
+  quantity: 4
+  link: https://www.thomann.de/de/xlr_kabel.htm
+
+- name: XLR Stereo
+  length: 5
+  quantity: 6
+  link: https://www.thomann.de/de/xlr_kabel.htm
+
+- name: Power Cable
+  length: 3
+  quantity: 8
+  link: https://www.thomann.de/de/stromkabel.htm
+
+- name: DMX Cable
+  length: 10
+  quantity: 2
+  link: https://www.thomann.de/de/dmx_kabel.htm
+
