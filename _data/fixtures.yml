@@ -3,7 +3,181 @@
   quantity: 4
   link: https://www.thomann.de/de/varytec_led_typhoon_true_par_12x10_out.htm?gad_source=1
   manual: https://fast-images.static-thomann.de/pics/atg/atgdata/document/manual/420255_c_420255_v4_en_online.pdf
+  mode: "13-Channel"
+  channels:
+    - ch: 1
+      desc: "Brightness"
+      range: "000-255"
+    - ch: 2
+      desc: "Red intensity"
+      range: "000-255"
+    - ch: 3
+      desc: "Green intensity"
+      range: "000-255"
+    - ch: 4
+      desc: "Blue intensity"
+      range: "000-255"
+    - ch: 5
+      desc: "White intensity"
+      range: "000-255"
+    - ch: 6
+      desc: "Amber intensity"
+      range: "000-255"
+    - ch: 7
+      desc: "UV intensity"
+      range: "000-255"
+    - ch: 8
+      desc: "Automatic color transition"
+      range: "000-255"
+    - ch: 9
+      desc: "Strobe"
+      range: "0-8 Standard, 9-255 Strobe with increasing speed"
+    - ch: 10
+      desc: "Automatic Show"
+      range: "000-255"
+    - ch: 11
+      desc: "Automatic Show Running speed"
+      range: "000-255"
+    - ch: 12
+      desc: "Dimmer curves with afterglow effect"
+      range: "000-049 Standard, 050-099 Dimmer mode 1, 100-149 Dimmer mode 2, 150-199 Dimmer mode 3, 200-255 Dimmer mode 4"
+    - ch: 13
+      desc: "ID assignment"
+      range: ""
 
 - name: Eurolite LED THM-46
   quantity: 2
   link: https://www.thomann.de/de/eurolite_led_tmh_46_moving_head_wash.htm
+  mode: "18-Channel"
+  channels:
+    - ch: 1
+      desc: "Pan"
+      range: "000-255"
+    - ch: 2
+      desc: "Pan Fine"
+      range: "000-255"
+    - ch: 3
+      desc: "Tilt"
+      range: "000-255"
+    - ch: 4
+      desc: "Tilt Fine"
+      range: "000-255"
+    - ch: 5
+      desc: "Pan/Tilt speed"
+      range: "000-255"
+    - ch: 6
+      desc: "Dimmer"
+      range: "000-255"
+    - ch: 7
+      desc: "Strobe"
+      range: "000-255"
+    - ch: 8
+      desc: "Red"
+      range: "000-255"
+    - ch: 9
+      desc: "Green"
+      range: "000-255"
+    - ch: 10
+      desc: "Blue"
+      range: "000-255"
+    - ch: 11
+      desc: "White"
+      range: "000-255"
+    - ch: 12
+      desc: "Amber"
+      range: "000-255"
+    - ch: 13
+      desc: "UV"
+      range: "000-255"
+    - ch: 14
+      desc: "Motion Macros"
+      range: "000-255"
+    - ch: 15
+      desc: "Motion Macros Speed"
+      range: "000-255"
+    - ch: 16
+      desc: "Color Macros"
+      range: "000-255"
+    - ch: 17
+      desc: "Color Macros Speed"
+      range: "000-255"
+    - ch: 18
+      desc: "Reset"
+      range: "000-255"
+
+- name: Aliexpress PAR
+  quantity: 4
+  link: https://www.aliexpress.com/item/1005004430211428.html
+  manual: https://forums.pioneerdj.com/hc/user_images/mqaxf0DW1cDbQthUUF3sag.jpeg
+  mode: "10-Channel"
+  channels:
+    - ch: 1
+      desc: "Brightness"
+      range: "000-255"
+    - ch: 2
+      desc: "Red intensity"
+      range: "000-255"
+    - ch: 3
+      desc: "Green intensity"
+      range: "000-255"
+    - ch: 4
+      desc: "Blue intensity"
+      range: "000-255"
+    - ch: 5
+      desc: "White intensity"
+      range: "000-255"
+    - ch: 6
+      desc: "Amber intensity"
+      range: "000-255"
+    - ch: 7
+      desc: "UV intensity"
+      range: "000-255"
+    - ch: 8
+      desc: "Strobe Speed"
+      range: "000-255"
+    - ch: 9
+      desc: "Function Choice"
+      range: "000-255"
+    - ch: 10
+      desc: "Function Speed"
+      range: "000-255"
+
+- name: Cameo Wookie series 400RGB
+  quantity: 1
+  mode: "9-Channel"
+  channels:
+    - ch: 1
+      desc: "Mode select"
+      range: "000-063 Laser Off, 064-127 Auto Mode, 128-191 Sound mode, 192-255 DMX mode"
+    - ch: 2
+      desc: "Colours"
+      range: "000-063 Original colour, 064-095 Red, 096-127 Green, 128-159 Blue, 160-191 Yellow, 192-223 Pink, 224-255 Cyan"
+    - ch: 3
+      desc: "Pattern select"
+      range: "000-255 (32 Patterns)"
+    - ch: 4
+      desc: "Zooming"
+      range: "000-127 Manual pattern size, 128-255 Loop zooming in/out"
+    - ch: 5
+      desc: "X axis rolling"
+      range: "000-127 Manual rolling, 128-255 Rolling speed"
+    - ch: 6
+      desc: "Y axis rolling"
+      range: "000-127 Manual rolling, 128-255 Rolling speed"
+    - ch: 7
+      desc: "Z axis rolling"
+      range: "000-127 Manual rolling, 128-255 Rolling speed"
+    - ch: 8
+      desc: "X axis moving"
+      range: "000-127 Manual position, 128-255 Horizontal moving speed"
+    - ch: 9
+      desc: "Y axis moving"
+      range: "000-127 Manual position"
+
+- name: Stairville AF-150
+  quantity: 1
+  mode: "1-Channel"
+  channels:
+    - ch: 1
+      desc: "Pump"
+      range: "000-255"

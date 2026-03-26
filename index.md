@@ -12,9 +12,9 @@ title: Cable Inventory
 
 ## Fixtures
 
-| Name | Quantity | Link | Manual |
-|------|----------|------|--------|
-{% for fixture in site.data.fixtures %}| {{ fixture.name }} | {{ fixture.quantity }} | [Link]({{ fixture.link }}) | {% if fixture.manual %}[Manual]({{ fixture.manual }}){% endif %} |
+| Name | Quantity | Link | Manual | DMX |
+|------|----------|------|--------|-----|
+{% for fixture in site.data.fixtures %}| {{ fixture.name }} | {{ fixture.quantity }} | [Link]({{ fixture.link }}) | {% if fixture.manual %}[Manual]({{ fixture.manual }}){% endif %} | {% if fixture.channels %}[Mapping]({{ '/fixtures' | relative_url }}#{{ fixture.name | slugify }}){% endif %} |
 {% endfor %}
 
 ## Checkout
